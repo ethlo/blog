@@ -78,3 +78,7 @@
 .md-typeset pre > code { border: 1px solid var(--md-default-fg-color--lightest); }
 .md-header { box-shadow: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
 .md-header__button.md-logo img { height: 1.3rem; width: auto; }
+
+/* Previous/next only between posts. On the list, archive and category pages the theme would
+   chain through years and categories instead of posts. */
+body:not(:has(.md-content--post)) .md-footer__inner { display: none; }
