@@ -106,6 +106,16 @@ def share_card(title, label, picture, out):
     card.save(out, optimize=True)
 
 
+def make_thumb(picture, out):
+    """A 4:3 thumbnail. Large screenshots are cropped to their top-left corner, so the
+    thumbnail shows readable detail instead of the whole screen shrunk to noise."""
+    img = Image.open(picture).convert("RGB")
+    if picture.suffix.lower() in (".png", ".webp") and img.width >= 1200:
+        w = int(img.width * 0.6)
+        img = img.crop((0, 0, w, min(img.height, int(w * 3 / 4))))
+    ImageOps.fit(img, (720, 540), Image.LANCZOS).save(out, quality=82, optimize=True, progressive=True)
+
+
 def main():
     (DOCS / "assets/social").mkdir(parents=True, exist_ok=True)
     (DOCS / "assets/thumbs").mkdir(parents=True, exist_ok=True)
@@ -129,7 +139,7 @@ def main():
         fm = set_key(fm, "share", f"assets/social/{name}.png")
         if picture:
             thumb = DOCS / f"assets/thumbs/{name}.jpg"
-            ImageOps.fit(Image.open(picture).convert("RGB"), (720, 540), Image.LANCZOS).save(thumb, quality=82, optimize=True, progressive=True)
+            make_thumb(picture, thumb)
             if not re.search(r"^image:", fm, re.M):
                 fm = set_key(fm, "image", f"assets/thumbs/{name}.jpg")
         if not re.search(r"^description:", fm, re.M):

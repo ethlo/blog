@@ -28,7 +28,7 @@
 
 /* The list is wider, so pictures fit beside the text; a post keeps one column at a length the eye can follow */
 .md-grid { max-width: 46rem; }
-.md-content--post, body:has(.md-content--post) .md-footer__inner { max-width: 38rem; }
+.md-content.md-content--post, body:has(.md-content--post) .md-footer__inner { max-width: 38rem; }
 .md-sidebar--primary, .md-sidebar--secondary, .md-header__button[for="__drawer"] { display: none !important; }
 .md-content { max-width: 100%; }
 .md-header__button.md-logo { display: inline-block !important; }
@@ -87,7 +87,7 @@
 body:not(:has(.md-content--post)) .md-footer__inner { display: none; }
 
 /* ---- The post list: text on the left, a picture on the right ---- */
-.kw-post { display: grid; grid-template-columns: minmax(0, 1fr) 12.5rem; gap: 0 1.8rem; align-items: start; }
+.kw-post { display: grid; grid-template-columns: minmax(0, 34rem) 12.5rem; justify-content: space-between; gap: 0 1.8rem; align-items: start; }
 .kw-post__text { min-width: 0; }
 .kw-post .md-post__header { margin: 0; }
 .md-post--excerpt .md-post__content h2 { font-size: 1.55em; line-height: 1.08; margin: .35em 0 .45em; }
@@ -104,16 +104,11 @@ body:not(:has(.md-content--post)) .md-footer__inner { display: none; }
 .kw-post__visual { display: block; aspect-ratio: 4 / 3; margin-top: .2rem; overflow: hidden; border: 1px solid var(--md-default-fg-color--lightest); background: var(--kw-surface); }
 .kw-post__visual img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
 .kw-post:hover .kw-post__visual img { transform: scale(1.04); }
-.kw-tile { display: flex; align-items: flex-end; height: 100%; padding: .8rem .9rem; box-sizing: border-box; border-top: 3px solid var(--ethlo-accent); }
-.kw-tile__label { font-family: "Inter Tight", system-ui, sans-serif; font-weight: 800; font-size: 1.15rem; line-height: 1; letter-spacing: -.03em; color: var(--md-default-fg-color); }
-.kw-post--archive .kw-tile { border-top-color: var(--md-default-fg-color--lighter); }
-.kw-post--archive .kw-tile__label { color: var(--md-default-fg-color--light); }
 .md-meta__item.kw-archive { color: var(--ethlo-accent); }
 
 @media screen and (max-width: 40em) {
   .kw-post { grid-template-columns: 1fr; }
   .kw-post__visual { order: -1; aspect-ratio: 16 / 9; margin: 0 0 .9rem; }
-  .kw-post__visual:has(.kw-tile) { display: none; }
 }
 
 /* ---- Start here: three cards above the list ---- */
@@ -130,3 +125,8 @@ body:not(:has(.md-content--post)) .md-footer__inner { display: none; }
 .kw-card__label { font-family: var(--md-code-font-family); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ethlo-accent); }
 .kw-card__title { font-family: "Inter Tight", system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; line-height: 1.12; letter-spacing: -.03em; }
 .md-typeset a.kw-card:hover .kw-card__title { color: var(--ethlo-accent); }
+@media screen and (max-width: 40em) {
+  .kw-start__grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: .8rem; margin: 0 -.8rem; padding: 0 .8rem .4rem; scrollbar-width: none; }
+  .kw-start__grid::-webkit-scrollbar { display: none; }
+  .md-typeset a.kw-card { flex: 0 0 72%; scroll-snap-align: start; }
+}

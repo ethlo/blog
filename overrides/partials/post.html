@@ -1,12 +1,11 @@
 {#-
   One post in the list: label line, title and excerpt on the left, a picture on the right.
   The picture is the post's `image` (a thumbnail made by scripts/cards.py); posts without one
-  get a tile with their category. Posts in the Archive category are labelled as such.
+  are text only. Posts in the Archive category are labelled as such.
 -#}
 {%- set meta = post.meta or {} -%}
 {%- set titles = post.categories | map(attribute="title") | list if post.categories else [] -%}
 {%- set archived = "Archive" in titles -%}
-{%- set topic = (titles | reject("equalto", "Archive") | first) or ("Archive" if archived else "Notes") -%}
 <article class="md-post md-post--excerpt kw-post{% if archived %} kw-post--archive{% endif %}">
   <div class="kw-post__text">
     <header class="md-post__header">
@@ -20,7 +19,7 @@
           {% if archived %}
             <li class="md-meta__item kw-archive">From the archive</li>
           {% endif %}
-          {% if post.categories %}
+          {% if titles | reject("equalto", "Archive") | list %}
             <li class="md-meta__item">
               {%- for category in post.categories if category.title != "Archive" -%}
                 <a href="{{ category.url | url }}" class="md-meta__link">{{ category.title }}</a>
@@ -52,11 +51,9 @@
       {% endif %}
     </div>
   </div>
-  <a class="kw-post__visual" href="{{ post.url | url }}" tabindex="-1" aria-hidden="true">
-    {% if meta.image %}
+  {% if meta.image %}
+    <a class="kw-post__visual" href="{{ post.url | url }}" tabindex="-1" aria-hidden="true">
       <img src="{{ meta.image | url }}" alt="" loading="lazy" width="720" height="540" />
-    {% else %}
-      <span class="kw-tile"><span class="kw-tile__label">{{ topic }}</span></span>
-    {% endif %}
-  </a>
+    </a>
+  {% endif %}
 </article>
