@@ -3,6 +3,9 @@ date: 2022-03-11
 categories:
   - Java
   - Performance
+share: assets/social/seven-releases-in-two-weeks.png
+image: assets/thumbs/seven-releases-in-two-weeks.jpg
+description: "The library worked. I spent two weeks rewriting large parts of it anyway, and broke compatibility on the way."
 ---
 
 # Seven releases in two weeks

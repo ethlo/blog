@@ -1,0 +1,59 @@
+{#-
+  One post in the list: label line, title and excerpt on the left, a picture on the right.
+  The picture is the post's `image` (a thumbnail made by scripts/cards.py); posts without one
+  are text only. Posts in the Archive category are labelled as such.
+-#}
+{%- set meta = post.meta or {} -%}
+{%- set titles = post.categories | map(attribute="title") | list if post.categories else [] -%}
+{%- set archived = "Archive" in titles -%}
+<article class="md-post md-post--excerpt kw-post{% if archived %} kw-post--archive{% endif %}">
+  <div class="kw-post__text">
+    <header class="md-post__header">
+      <div class="md-post__meta md-meta">
+        <ul class="md-meta__list">
+          <li class="md-meta__item">
+            <time datetime="{{ post.config.date.created }}">
+              {{- post.config.date.created | date -}}
+            </time>
+          </li>
+          {% if archived %}
+            <li class="md-meta__item kw-archive">From the archive</li>
+          {% endif %}
+          {% if titles | reject("equalto", "Archive") | list %}
+            <li class="md-meta__item">
+              {%- for category in post.categories if category.title != "Archive" -%}
+                <a href="{{ category.url | url }}" class="md-meta__link">{{ category.title }}</a>
+                {%- if not loop.last %}, {% endif -%}
+              {%- endfor -%}
+            </li>
+          {% endif %}
+          {% if post.config.readtime %}
+            <li class="md-meta__item">
+              {% if post.config.readtime == 1 %}
+                {{ lang.t("readtime.one") }}
+              {% else %}
+                {{ lang.t("readtime.other") | replace("#", post.config.readtime) }}
+              {% endif %}
+            </li>
+          {% endif %}
+        </ul>
+        {% if post.config.draft %}
+          <span class="md-draft">{{ lang.t("blog.draft") }}</span>
+        {% endif %}
+      </div>
+    </header>
+    <div class="md-post__content md-typeset">
+      {{ post.content }}
+      {% if post.more %}
+        <nav class="md-post__action">
+          <a href="{{ post.url | url }}">Read the note <span aria-hidden="true">→</span></a>
+        </nav>
+      {% endif %}
+    </div>
+  </div>
+  {% if meta.image %}
+    <a class="kw-post__visual" href="{{ post.url | url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ meta.image | url }}" alt="" loading="lazy" width="720" height="540" />
+    </a>
+  {% endif %}
+</article>

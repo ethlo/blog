@@ -3,6 +3,8 @@ date: 2019-10-01
 categories:
   - Java
   - Spring
+share: assets/social/scripts-inside-a-running-jvm.png
+description: "Every client wants one small thing that no other client wants. It is always a few lines of code, and it never belongs in the main code base."
 ---
 
 # Scripts inside a running JVM

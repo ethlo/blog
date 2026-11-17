@@ -2,6 +2,8 @@
 date: 2015-07-28
 categories:
   - Home
+share: assets/social/a-screen-saver-for-a-chromecast.png
+description: "I have a plasma TV and a Chromecast, and they do not like each other."
 ---
 
 # A screen saver for a Chromecast, to save a plasma TV

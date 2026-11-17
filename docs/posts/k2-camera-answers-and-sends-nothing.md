@@ -3,6 +3,8 @@ date: 2026-11-18
 draft: true
 categories:
   - 3D printing
+share: assets/social/k2-camera-answers-and-sends-nothing.png
+description: "The Creality K2 Pro is good hardware with cheap software on it. The camera is where I ran into that."
 ---
 
 # The K2 camera answers every offer and then sends nothing

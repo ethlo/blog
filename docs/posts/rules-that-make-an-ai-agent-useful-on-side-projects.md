@@ -2,6 +2,8 @@
 date: 2026-11-09
 categories:
   - AI
+share: assets/social/rules-that-make-an-ai-agent-useful-on-side-projects.png
+description: "I have more side projects moving now than I ever had, since an AI agent does most of the typing. For a while I also had more things that did not work than I ever had."
 ---
 
 # Rules that make an AI agent useful on side projects

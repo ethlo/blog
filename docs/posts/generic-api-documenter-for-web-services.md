@@ -2,6 +2,8 @@
 date: 2014-05-29
 categories:
   - Archive
+share: assets/social/generic-api-documenter-for-web-services.png
+description: "For some time I have meant to fully document all the different APIs I’m involved in. It gives a more professional feel, it helps integrators and front-end developers and it actually makes it…"
 ---
 
 # Generic API documenter for web-services

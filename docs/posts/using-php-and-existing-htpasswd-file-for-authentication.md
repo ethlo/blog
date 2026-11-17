@@ -2,6 +2,8 @@
 date: 2013-02-01
 categories:
   - Archive
+share: assets/social/using-php-and-existing-htpasswd-file-for-authentication.png
+description: "Our clients were a bit unhappy with the inability to log out from basic auth protected services. As I did not want to have everyone update their passwords (and having them kept in a file is…"
 ---
 
 # Using PHP and existing htpasswd-file for authentication

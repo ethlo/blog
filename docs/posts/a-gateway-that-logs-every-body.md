@@ -2,6 +2,9 @@
 date: 2023-03-20
 categories:
   - Gateway
+share: assets/social/a-gateway-that-logs-every-body.png
+image: assets/thumbs/a-gateway-that-logs-every-body.jpg
+description: "'We sent it correctly.' I have heard that sentence many times, and most of the time I could not check it."
 ---
 
 # A gateway that logs every body

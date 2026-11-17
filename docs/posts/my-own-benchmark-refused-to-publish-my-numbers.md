@@ -3,6 +3,8 @@ date: 2026-10-13
 categories:
   - Gateway
   - Performance
+share: assets/social/my-own-benchmark-refused-to-publish-my-numbers.png
+description: "I built a benchmark that decides by itself whether its numbers can be published. On the run I wanted to publish, it said no."
 ---
 
 # My own benchmark refused to publish my numbers

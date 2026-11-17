@@ -2,6 +2,8 @@
 date: 2016-01-08
 categories:
   - Archive
+share: assets/social/migrating-git-repo-to-new-server.png
+description: "Simple script to copy all branches and code from one repo to another."
 ---
 
 # Migrating git repo to new server

@@ -2,6 +2,9 @@
 date: 2026-10-12
 categories:
   - Gateway
+share: assets/social/a-gateway-that-remembers-every-request.png
+image: assets/thumbs/a-gateway-that-remembers-every-request.jpg
+description: "Recording every request body costs my new gateway about a third of its throughput. I think that is cheap."
 ---
 
 # A gateway that remembers every request

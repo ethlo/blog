@@ -2,6 +2,8 @@
 date: 2016-01-05
 categories:
   - Archive
+share: assets/social/waiting-for-transaction-propagation.png
+description: "In the land of traditional ACID DBs, I often encounter code that is trying to collaborate with some external system using a queue or notification system. The problem is that it ends up sending the…"
 ---
 
 # Waiting for transaction propagation

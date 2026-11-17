@@ -3,6 +3,8 @@ date: 2018-05-15
 categories:
   - Java
   - Geo
+share: assets/social/a-map-tile-as-a-64-bit-integer.png
+description: "I want to know where users are, and I do not want to know where users are."
 ---
 
 # A map tile as a 64-bit integer

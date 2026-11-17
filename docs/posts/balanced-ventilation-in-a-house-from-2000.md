@@ -2,6 +2,9 @@
 date: 2025-07-10
 categories:
   - House
+share: assets/social/balanced-ventilation-in-a-house-from-2000.png
+image: assets/thumbs/balanced-ventilation-in-a-house-from-2000.jpg
+description: "I spent a month putting balanced ventilation into our house, and I made the job about twice as big as it needed to be. On purpose."
 ---
 
 # Balanced ventilation in a house from 2000, with no visible ducts

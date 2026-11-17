@@ -2,6 +2,8 @@
 date: 2000-08-10
 categories:
   - Archive
+share: assets/social/tweakmania-on-the-3d-pulpit.png
+description: "The Reverend posted about cstweak on his 3D Pulpit page at Voodoo Extreme today, under the headline 'Tweak your games!'."
 ---
 
 # cstweak on the 3D Pulpit

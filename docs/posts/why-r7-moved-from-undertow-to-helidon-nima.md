@@ -2,6 +2,8 @@
 date: 2026-10-02
 categories:
   - Gateway
+share: assets/social/why-r7-moved-from-undertow-to-helidon-nima.png
+description: "r7 now runs every request on a virtual thread of its own, the upstream call included. To get that I replaced the HTTP server under it, five months in and a week and a half before the first beta."
 ---
 
 # Why r7 moved from Undertow to Helidon Níma

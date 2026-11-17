@@ -2,6 +2,8 @@
 date: 2026-11-17
 categories:
   - 3D printing
+share: assets/social/a-k2-firmware-update-deletes-your-config-and-your-root.png
+description: "I rooted my printer, changed its config, and then got annoyed when a firmware update did not respect my changes."
 ---
 
 # A K2 firmware update deletes your config and your root

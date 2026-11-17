@@ -2,6 +2,8 @@
 date: 2003-05-02
 categories:
   - Archive
+share: assets/social/sleepy-news-system.png
+description: "A news system in Python, built on XML files instead of a database. Project in the course Programming for the web, spring 2003."
 ---
 
 # Project: SleePy

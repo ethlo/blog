@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{#- Link previews: title, description and a share card (made by scripts/cards.py) for every page. -#}
+{% block extrahead %}
+  {%- set meta = page.meta or {} -%}
+  {%- set site = config.site_url | default("https://blog.ethlo.com/") -%}
+  {%- set description = meta.description or config.site_description -%}
+  {%- set image = site ~ (meta.share or "assets/social/default.png") -%}
+  {%- set title = page.title if page.title and not page.is_homepage else config.site_name -%}
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta property="og:type" content="{{ 'article' if meta.share else 'website' }}" />
+  <meta property="og:title" content="{{ title | striptags | e }}" />
+  <meta property="og:description" content="{{ description | e }}" />
+  <meta property="og:image" content="{{ image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  {% if page.canonical_url %}<meta property="og:url" content="{{ page.canonical_url }}" />{% endif %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title | striptags | e }}" />
+  <meta name="twitter:description" content="{{ description | e }}" />
+  <meta name="twitter:image" content="{{ image }}" />
+{% endblock %}

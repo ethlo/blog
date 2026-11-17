@@ -2,6 +2,8 @@
 date: 2023-09-15
 categories:
   - RC racing
+share: assets/social/race-standings-from-lap-times-alone.png
+description: "RC racing has timing that tells you one thing: when each car crossed the line. I wanted to know who was ahead in the middle of a lap, and you cannot know that. It turns out you can get close enough."
 ---
 
 # Race standings from lap times alone
