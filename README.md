@@ -22,6 +22,22 @@ The rest of the post.
 
 `draft: true` in the front matter keeps a post out of the published site.
 
+## Pictures and link previews
+
+After writing or changing a post, run:
+
+```bash
+python3 scripts/cards.py   # needs Pillow
+```
+
+For every post it makes a share card (`docs/assets/social/`, the picture LinkedIn, Slack and others
+show for a link) and, for posts with an image, a thumbnail for the list (`docs/assets/thumbs/`).
+It also fills in `description`, `share` and `image` in the front matter. A `description` written by
+hand is kept; `thumb: assets/...` picks another image for the thumbnail than the post's first one.
+
+The list templates are in `overrides/`: `partials/post.html` is one post in the list,
+`main.html` adds the link-preview tags. The three "Start here" posts are in `docs/index.md`.
+
 ## Build
 
 ```bash
