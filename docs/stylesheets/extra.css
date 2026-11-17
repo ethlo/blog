@@ -1,0 +1,80 @@
+/* ethlo.com's look, tuned for reading: its ink, its orange, its headline and label type. */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;800&display=swap");
+
+:root {
+  --ethlo-accent: #FF5A1F;
+  --md-accent-fg-color: var(--ethlo-accent);
+  --md-typeset-a-color: var(--ethlo-accent);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0E1013;
+  --md-default-fg-color: #E4E6EA;
+  --md-default-fg-color--light: #A9ADB5;
+  --md-default-fg-color--lighter: #8E929B;
+  --md-default-fg-color--lightest: #2A2D33;
+  --md-code-bg-color: #16191D;
+  --md-code-fg-color: #C9CBD1;
+  --ethlo-link: #FF7A4A;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #FFFFFF;
+  --md-default-fg-color: #0E1013;
+  --ethlo-link: #C8400F;
+}
+
+/* One column of text at a length the eye can follow */
+.md-grid { max-width: 38rem; }
+.md-sidebar--primary, .md-sidebar--secondary, .md-header__button[for="__drawer"] { display: none !important; }
+.md-content { max-width: 100%; }
+.md-header__button.md-logo { display: inline-block !important; }
+.md-header__title { margin-left: .4rem; }
+
+/* On a post, the date and category sit above the title instead of in a side column */
+.md-content--post { display: block; }
+.md-sidebar--post { display: block !important; position: static; width: auto; height: auto; padding: 1.6rem .8rem 0; }
+@media screen and (max-width: 76.2344em) { .md-sidebar--post { padding: 1.2rem .8rem 0; transform: none !important; margin-left: .6rem; } }
+.md-sidebar--post .md-sidebar__scrollwrap { overflow: visible; height: auto !important; margin: 0; }
+.md-sidebar--post .md-sidebar__inner { padding: 0; }
+.md-sidebar--post .md-post__back, .md-sidebar--post .md-post__title, .md-sidebar--post .md-nav__link svg { display: none; }
+.md-sidebar.md-sidebar--post .md-post__meta { margin: 0; padding: 0; border: 0; }
+.md-sidebar--post .md-post__meta .md-nav .md-nav__list { display: flex; flex-wrap: wrap; gap: 0 1.4em; margin: 0; padding: 0; }
+.md-sidebar--post .md-post__meta .md-nav__link { display: inline; }
+.md-sidebar.md-sidebar--post .md-post__meta + .md-post__meta { padding: 0; margin: 0; border: 0; }
+.md-sidebar--post .md-nav__item { padding: 0; margin: 0; }
+.md-sidebar--post .md-sidebar__inner.md-post { border: 0; padding: 0; margin: 0; }
+.md-content--post .md-content__inner { padding-top: 0; margin-top: .4rem; }
+.md-content--post .md-content__inner::before { display: none; }
+.md-typeset { font-size: .85rem; line-height: 1.7; }
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-post__content h2 {
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -.035em;
+  color: var(--md-default-fg-color);
+}
+.md-typeset h1 { font-size: 2.3em; line-height: 1.02; margin-bottom: .7em; }
+.md-typeset h2 { font-size: 1.5em; line-height: 1.1; margin-top: 2em; }
+.md-typeset h3 { font-size: 1.15em; font-weight: 600; letter-spacing: -.02em; }
+
+/* Dates, categories and reading time as ethlo.com's labels */
+.md-post__meta, .md-post__meta a, .md-typeset .md-post__meta, .md-post__meta .md-nav__link {
+  font-family: var(--md-code-font-family);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+.md-post { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 1.6rem; margin-bottom: 1.6rem; }
+.md-post__content h2 a { color: var(--md-default-fg-color); }
+.md-post__content h2 a:hover { color: var(--ethlo-accent); }
+
+.md-typeset a, .md-typeset a:visited { color: var(--ethlo-link); }
+.md-typeset a:hover { color: var(--ethlo-accent); }
+.md-typeset a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.md-typeset table:not([class]) { font-size: .9em; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0; }
+.md-typeset pre > code, .md-typeset .highlight { border-radius: 0; }
+.md-typeset pre > code { border: 1px solid var(--md-default-fg-color--lightest); }
+.md-header { box-shadow: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+.md-header__button.md-logo img { height: 1.3rem; width: auto; }
