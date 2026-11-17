@@ -3,6 +3,8 @@ date: 2013-02-21
 categories:
   - Java
   - JPA
+share: assets/social/weaving-eclipselink-entities-at-build-time.png
+description: "EclipseLink needs to change your entity classes to do lazy loading and change tracking properly. It can do that when the application starts. That sounds convenient. It has been a pain in the neck…"
 ---
 
 # Weaving EclipseLink entities at build time

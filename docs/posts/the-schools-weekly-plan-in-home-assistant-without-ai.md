@@ -2,6 +2,8 @@
 date: 2026-11-06
 categories:
   - Home Assistant
+share: assets/social/the-schools-weekly-plan-in-home-assistant-without-ai.png
+description: "I use AI for nearly everything I build these days. For reading my children's weekly plans from school I chose not to, and I think that was right."
 ---
 
 # The school's weekly plan in Home Assistant, without AI

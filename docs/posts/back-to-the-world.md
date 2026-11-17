@@ -2,6 +2,8 @@
 date: 2013-01-29
 categories:
   - Archive
+share: assets/social/back-to-the-world.png
+description: "I thought that since it feels pretty late to enter the blogosphere at my age, I will write up a small explanation, if there is anyone interested."
 ---
 
 # Back to the world

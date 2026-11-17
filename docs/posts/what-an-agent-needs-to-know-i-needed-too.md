@@ -2,6 +2,9 @@
 date: 2026-11-14
 categories:
   - AI
+share: assets/social/what-an-agent-needs-to-know-i-needed-too.png
+image: assets/thumbs/what-an-agent-needs-to-know-i-needed-too.jpg
+description: "I built a page to give an AI agent the context it needs for my work. The page turned out to be useful with no agent at all."
 ---
 
 # What an agent needs to know, I needed too

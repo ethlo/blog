@@ -2,6 +2,8 @@
 date: 2013-01-30
 categories:
   - Archive
+share: assets/social/spring-defaultkeygenerator-gotcha.png
+description: "To speed things up I had applied the excellent @Cacheable annotation to a service method in our application (don’t miss the excellent performance analysis here, btw). However, I had not paid too…"
 ---
 
 # Spring DefaultKeyGenerator gotcha

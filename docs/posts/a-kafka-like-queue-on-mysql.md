@@ -3,6 +3,8 @@ date: 2017-02-10
 categories:
   - Java
   - Databases
+share: assets/social/a-kafka-like-queue-on-mysql.png
+description: "Everybody knows you should not build a message queue on a database. I just did, and I think it was the right call."
 ---
 
 # A Kafka-like queue on MySQL

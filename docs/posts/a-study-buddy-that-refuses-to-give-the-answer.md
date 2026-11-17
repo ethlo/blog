@@ -2,6 +2,8 @@
 date: 2026-10-22
 categories:
   - AI
+share: assets/social/a-study-buddy-that-refuses-to-give-the-answer.png
+description: "We built it in about an hour. Agreeing on what to build took most of the day."
 ---
 
 # A study buddy that refuses to give the answer

@@ -2,6 +2,8 @@
 date: 2024-02-12
 categories:
   - Java
+share: assets/social/readme-examples-that-cannot-rot.png
+description: "I change my APIs a lot. I like to work on the API and the implementation at the same time, and move things until they feel right. The README is what pays for that."
 ---
 
 # README examples that cannot rot

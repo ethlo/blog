@@ -9,6 +9,8 @@ extra_css = ["stylesheets/extra.css"]
 [project.theme]
 language = "en"
 logo = "assets/logo.svg"
+# Template overrides: the post list with pictures, and link-preview tags (see overrides/).
+custom_dir = "overrides"
 favicon = "assets/favicon.png"
 features = [
   "content.code.copy",

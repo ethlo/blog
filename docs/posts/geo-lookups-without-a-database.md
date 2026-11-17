@@ -3,6 +3,8 @@ date: 2017-10-24
 categories:
   - Java
   - Geo
+share: assets/social/geo-lookups-without-a-database.png
+description: "In May I imported the world into MySQL. In October I deleted the database, and the library got simpler."
 ---
 
 # Geo lookups without a database

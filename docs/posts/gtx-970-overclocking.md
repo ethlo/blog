@@ -2,6 +2,8 @@
 date: 2014-10-28
 categories:
   - Archive
+share: assets/social/gtx-970-overclocking.png
+description: "This page was created to try to distill the information from more than 5,000 forum posts."
 ---
 
 # NVIDIA GTX 970 overclocking

@@ -3,6 +3,9 @@ date: 2019-08-16
 categories:
   - Java
   - Performance
+share: assets/social/a-stopwatch-you-can-leave-on-in-production.png
+image: assets/thumbs/a-stopwatch-you-can-leave-on-in-production.jpg
+description: "I like profilers. I also cannot use one where I need it most, which is in production, on the request that is slow right now."
 ---
 
 # A stopwatch you can leave on in production

@@ -3,6 +3,8 @@ date: 2013-06-26
 categories:
   - Java
   - XML
+share: assets/social/json-schema-to-xsd.png
+description: "Everyone is moving from XML to JSON. I just wrote a tool that goes the other way."
 ---
 
 # JSON Schema to XSD

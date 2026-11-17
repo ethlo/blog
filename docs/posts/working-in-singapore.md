@@ -2,6 +2,8 @@
 date: 2005-05-03
 categories:
   - Archive
+share: assets/social/working-in-singapore.png
+description: "Notes from my internship at an RFID company in Singapore, spring 2005."
 ---
 
 # Working in Singapore

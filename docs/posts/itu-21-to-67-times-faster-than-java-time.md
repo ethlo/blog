@@ -3,6 +3,8 @@ date: 2026-09-23
 categories:
   - Java
   - Performance
+share: assets/social/itu-21-to-67-times-faster-than-java-time.png
+description: "In September 2026 I spent three days making a date parser faster. It already took less than a microsecond."
 ---
 
 # Parsing ISO-8601 21 to 67 times faster than java.time

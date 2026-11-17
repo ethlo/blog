@@ -2,6 +2,8 @@
 date: 2016-01-10
 categories:
   - Archive
+share: assets/social/eclipselink-maven-plugin-2-6-2-released.png
+description: "I’m happy to announce version 2.6.2 of eclipselink-maven-plugin!"
 ---
 
 # eclipselink-maven-plugin 2.6.2 released

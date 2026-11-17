@@ -3,6 +3,8 @@ date: 2019-08-05
 categories:
   - Java
   - Spring
+share: assets/social/springs-transaction-aware-cache-has-a-massive-flaw.png
+description: "Spring has a decorator that keeps your cache honest when a transaction rolls back. It does that by lying to you until the transaction is over."
 ---
 
 # Spring's transaction-aware cache has a massive flaw

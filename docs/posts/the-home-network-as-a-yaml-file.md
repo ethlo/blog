@@ -2,6 +2,8 @@
 date: 2026-11-12
 categories:
   - Homelab
+share: assets/social/the-home-network-as-a-yaml-file.png
+description: "I have replaced the router and the core switch at home, and neither was set up by hand. The whole network is now one YAML file and an Ansible playbook."
 ---
 
 # The home network as a YAML file

@@ -4,6 +4,8 @@ categories:
   - Java
   - Spring
   - Performance
+share: assets/social/5800-to-53000-requests-per-second-by-skipping-the-filter-chain.png
+description: "I made a Spring endpoint nine times faster this week. The way I did it is by skipping most of what Spring does to keep you safe."
 ---
 
 # 5,800 to 53,000 req/s by skipping the filter chain

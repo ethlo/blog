@@ -2,6 +2,9 @@
 date: 2026-11-02
 categories:
   - 3D printing
+share: assets/social/one-drop-from-model-to-print.png
+image: assets/thumbs/one-drop-from-model-to-print.jpg
+description: "I wanted printing to be as simple as dropping a file on a page. To get there I had to make every decision the slicer normally asks about, once, on behalf of someone who does not want to be asked.…"
 ---
 
 # One drop from model to print

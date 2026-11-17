@@ -2,6 +2,8 @@
 date: 2026-09-19
 categories:
   - Gateway
+share: assets/social/five-bugs-in-my-own-gateway-in-one-day.png
+description: "On 18 September I filed five bugs against my own gateway. I had not found any of them myself. An AI review did, in code I have run since 2023."
 ---
 
 # Five bugs in my own gateway in one day

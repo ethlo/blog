@@ -3,6 +3,9 @@ date: 2016-02-01
 categories:
   - Java
   - JPA
+share: assets/social/one-change-listener-for-hibernate-and-eclipselink.png
+image: assets/thumbs/one-change-listener-for-hibernate-and-eclipselink.jpg
+description: "When core data changes, something else has to happen. A cache entry must go, a search index must be updated, and an audit log wants to know what the value was before. I had one mechanism for all…"
 ---
 
 # One change listener for Hibernate and EclipseLink
