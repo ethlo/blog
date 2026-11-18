@@ -88,8 +88,8 @@ def share_card(title, label, picture, out):
         d.line([(W - panel - 1, 0), (W - panel - 1, H)], fill=LINE, width=2)
         text_w = W - panel - 2 * PAD
     mono = font("JetBrainsMono.ttf", 22, 500)
-    d.text((PAD, PAD), "ETHLO NOTES", font=mono, fill=MUTED)
-    x = PAD + d.textlength("ETHLO NOTES", font=mono)
+    d.text((PAD, PAD), "NOTES FROM THE BENCH", font=mono, fill=MUTED)
+    x = PAD + d.textlength("NOTES FROM THE BENCH", font=mono)
     if label:
         d.text((x, PAD), "  ·  " + label.upper(), font=mono, fill=ACCENT)
     d.rectangle([PAD, PAD + 46, PAD + 56, PAD + 51], fill=ACCENT)

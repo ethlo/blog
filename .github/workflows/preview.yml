@@ -1,0 +1,24 @@
+# Temporary: builds design branches and pushes the built site to the preview-site branch.
+name: Preview
+on:
+  push:
+    branches: ['design/**', 'header/**']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --require-hashes -r .github/requirements.txt
+      - run: zensical build 2>&1 | tee build.log
+      - run: |
+          cp build.log site/build.log
+          cd site
+          git init -q -b preview-site
+          git add -A
+          git -c user.name=preview -c user.email=preview@users.noreply.github.com commit -qm "Preview of $GITHUB_SHA"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" preview-site

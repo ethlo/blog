@@ -1,5 +1,5 @@
 [project]
-site_name = "ethlo notes"
+site_name = "Notes from the bench"
 site_url = "https://blog.ethlo.com/"
 site_description = "Notes from the bench: what I measured, what broke and what I would do differently."
 site_author = "Morten Haraldsen"
