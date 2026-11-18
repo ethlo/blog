@@ -26,15 +26,9 @@ text = "Inter"
 code = "JetBrains Mono"
 
 # Dark first, like ethlo.com; the toggle gives a light page for those who read better on one.
-[[project.theme.palette]]
+# Dark only: the design is ethlo.com's ink-and-orange, so there is no light mode or toggle.
+[project.theme.palette]
 scheme = "slate"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to light mode"
-
-[[project.theme.palette]]
-scheme = "default"
-toggle.icon = "lucide/moon"
-toggle.name = "Switch to dark mode"
 
 [project.markdown_extensions]
 admonition = {}
