@@ -1,0 +1,143 @@
+/* ethlo.com's look, tuned for reading: its ink, its orange, its headline and label type. */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;800&display=swap");
+
+:root {
+  --ethlo-accent: #FF5A1F;
+  --md-accent-fg-color: var(--ethlo-accent);
+  --md-typeset-a-color: var(--ethlo-accent);
+}
+
+[data-md-color-scheme="slate"] {
+  --kw-surface: #16191D;
+  --md-default-bg-color: #0E1013;
+  --md-default-fg-color: #E4E6EA;
+  --md-default-fg-color--light: #A9ADB5;
+  --md-default-fg-color--lighter: #8E929B;
+  --md-default-fg-color--lightest: #2A2D33;
+  --md-code-bg-color: #16191D;
+  --md-code-fg-color: #C9CBD1;
+  --ethlo-link: #FF7A4A;
+}
+
+[data-md-color-scheme="default"] {
+  --kw-surface: #F3F4F6;
+  --md-default-bg-color: #FFFFFF;
+  --md-default-fg-color: #0E1013;
+  --ethlo-link: #C8400F;
+}
+
+/* The list is wider, so pictures fit beside the text; a post keeps one column at a length the eye can follow */
+.md-grid { max-width: 46rem; }
+.md-content.md-content--post, body:has(.md-content--post) .md-footer__inner { max-width: 38rem; }
+.md-sidebar--primary, .md-sidebar--secondary, .md-header__button[for="__drawer"] { display: none !important; }
+.md-content { max-width: 100%; }
+.md-header__button.md-logo { display: inline-block !important; }
+.md-header__title { margin-left: .4rem; }
+
+/* On a post, the date and category sit above the title instead of in a side column */
+.md-content--post { display: block; }
+.md-sidebar--post { display: block !important; position: static; width: auto; height: auto; padding: 1.6rem .8rem 0; }
+@media screen and (max-width: 76.2344em) { .md-sidebar--post { padding: 1.2rem .8rem 0; transform: none !important; margin-left: .6rem; } }
+.md-sidebar--post .md-sidebar__scrollwrap { overflow: visible; height: auto !important; margin: 0; }
+.md-sidebar--post .md-sidebar__inner { padding: 0; }
+.md-sidebar--post .md-post__back, .md-sidebar--post .md-post__title, .md-sidebar--post .md-nav__link svg { display: none; }
+.md-sidebar.md-sidebar--post .md-post__meta { margin: 0; padding: 0; border: 0; }
+.md-sidebar--post .md-post__meta .md-nav .md-nav__list { display: flex; flex-wrap: wrap; gap: 0 1.4em; margin: 0; padding: 0; }
+.md-sidebar--post .md-post__meta .md-nav__link { display: inline; }
+.md-sidebar.md-sidebar--post .md-post__meta + .md-post__meta { padding: 0; margin: 0; border: 0; }
+.md-sidebar--post .md-nav__item { padding: 0; margin: 0; }
+.md-sidebar--post .md-sidebar__inner.md-post { border: 0; padding: 0; margin: 0; }
+.md-content--post .md-content__inner { padding-top: 0; margin-top: .4rem; }
+.md-content--post .md-content__inner::before { display: none; }
+.md-typeset { font-size: .85rem; line-height: 1.7; }
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-post__content h2 {
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -.035em;
+  color: var(--md-default-fg-color);
+}
+.md-typeset h1 { font-size: 2.3em; line-height: 1.02; margin-bottom: .7em; }
+.md-typeset h2 { font-size: 1.5em; line-height: 1.1; margin-top: 2em; }
+.md-typeset h3 { font-size: 1.15em; font-weight: 600; letter-spacing: -.02em; }
+
+/* Dates, categories and reading time as ethlo.com's labels */
+.md-post__meta, .md-post__meta a, .md-typeset .md-post__meta, .md-post__meta .md-nav__link {
+  font-family: var(--md-code-font-family);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+.md-post { border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: 1.6rem; margin-bottom: 1.6rem; }
+.md-post__content h2 a { color: var(--md-default-fg-color); }
+.md-post__content h2 a:hover { color: var(--ethlo-accent); }
+
+.md-typeset a, .md-typeset a:visited { color: var(--ethlo-link); }
+.md-typeset a:hover { color: var(--ethlo-accent); }
+.md-typeset a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.md-typeset table:not([class]) { font-size: .9em; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0; }
+.md-typeset pre > code, .md-typeset .highlight { border-radius: 0; }
+.md-typeset pre > code { border: 1px solid var(--md-default-fg-color--lightest); }
+.md-header { box-shadow: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+.md-header__button.md-logo img { height: 1.3rem; width: auto; }
+
+/* Previous/next only between posts. On the list, archive and category pages the theme would
+   chain through years and categories instead of posts. */
+body:not(:has(.md-content--post)) .md-footer__inner { display: none; }
+
+/* ---- The post list: text on the left, a picture on the right ---- */
+.kw-post { display: grid; grid-template-columns: minmax(0, 34rem) 12.5rem; justify-content: space-between; gap: 0 1.8rem; align-items: start; }
+.kw-post__text { min-width: 0; }
+.kw-post .md-post__header { margin: 0; }
+.md-post--excerpt .md-post__content h2 { font-size: 1.55em; line-height: 1.08; margin: .35em 0 .45em; }
+.md-post--excerpt .md-post__content h2 a { text-decoration: none; }
+.md-post--excerpt .md-post__content p { color: var(--md-default-fg-color--light); margin: 0 0 .9em; }
+.md-post__action a, .md-typeset .md-post__action a:visited {
+  font-family: "Inter Tight", system-ui, sans-serif; font-weight: 600; font-size: .95em;
+  color: var(--md-default-fg-color); text-decoration: none;
+}
+.md-typeset .md-post__action a:hover { color: var(--ethlo-accent); }
+.md-post__action a span { color: var(--ethlo-accent); transition: margin .2s; }
+.md-post__action a:hover span { margin-left: .25em; }
+
+.kw-post__visual { display: block; aspect-ratio: 4 / 3; margin-top: .2rem; overflow: hidden; border: 1px solid var(--md-default-fg-color--lightest); background: var(--kw-surface); }
+.kw-post__visual img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.kw-post:hover .kw-post__visual img { transform: scale(1.04); }
+.md-meta__item.kw-archive { color: var(--ethlo-accent); }
+
+@media screen and (max-width: 40em) {
+  .kw-post { grid-template-columns: 1fr; }
+  .kw-post__visual { order: -1; aspect-ratio: 16 / 9; margin: 0 0 .9rem; }
+}
+
+/* ---- Start here: three cards above the list ---- */
+.kw-start { margin: 2rem 0 0; }
+.md-typeset .kw-start__label {
+  font-family: var(--md-code-font-family); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--md-default-fg-color--light); margin: 0 0 .8rem;
+}
+.md-typeset .kw-start__label--latest { margin: 2.4rem 0 0; padding-bottom: .8rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+.kw-start__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1rem; }
+.md-typeset a.kw-card, .md-typeset a.kw-card:visited { display: flex; flex-direction: column; gap: .45rem; color: var(--md-default-fg-color); text-decoration: none; }
+.kw-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--md-default-fg-color--lightest); transition: transform .35s ease; }
+.kw-card:hover img { transform: translateY(-3px); }
+.kw-card__label { font-family: var(--md-code-font-family); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ethlo-accent); }
+.kw-card__title { font-family: "Inter Tight", system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; line-height: 1.12; letter-spacing: -.03em; }
+.md-typeset a.kw-card:hover .kw-card__title { color: var(--ethlo-accent); }
+@media screen and (max-width: 40em) {
+  .kw-start__grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: .8rem; padding-bottom: .4rem; scrollbar-width: none; }
+  .kw-start__grid::-webkit-scrollbar { display: none; }
+  .md-typeset a.kw-card { flex: 0 0 78%; scroll-snap-align: start; }
+}
+
+/* ---- Header: the title goes to the blog's front page, ethlo.com is one click away ---- */
+.md-header__topic a.kw-title { color: inherit; text-decoration: none; }
+.md-header__topic a.kw-title:hover { color: var(--ethlo-accent); }
+.kw-home {
+  margin: 0 .6rem 0 .2rem; padding: .3rem .1rem; white-space: nowrap;
+  font-family: "Inter Tight", system-ui, sans-serif; font-weight: 600; font-size: .7rem;
+  color: var(--md-default-fg-color--light); text-decoration: none;
+}
+.kw-home:hover { color: var(--ethlo-accent); }
+.kw-home span { color: var(--ethlo-accent); }
