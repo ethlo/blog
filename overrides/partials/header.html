@@ -72,9 +72,6 @@
       {% include "partials/alternate.html" %}
     {% endif %}
 
-    <!-- Back to ethlo.com -->
-    <a class="kw-home" href="https://ethlo.com">ethlo.com <span aria-hidden="true">↗</span></a>
-
     <!-- Button to open search modal -->
     {% if "search" in config.plugins %}
       {% set search = config.plugins["search"] | attr("config") %}
