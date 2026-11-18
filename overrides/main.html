@@ -20,3 +20,12 @@
   <meta name="twitter:description" content="{{ description | e }}" />
   <meta name="twitter:image" content="{{ image }}" />
 {% endblock %}
+
+{#- The front page's title is the blog's name; show it once in the browser tab, not twice. -#}
+{% block htmltitle %}
+  {% if not (page.meta and page.meta.title) and (page.title | striptags) == config.site_name %}
+    <title>{{ config.site_name }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
