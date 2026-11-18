@@ -25,7 +25,6 @@
 .md-sidebar--primary, .md-sidebar--secondary, .md-header__button[for="__drawer"] { display: none !important; }
 .md-content { max-width: 100%; }
 .md-header__button.md-logo { display: inline-block !important; }
-.md-header__title { margin-left: .4rem; }
 
 /* On a post, the date and category sit above the title instead of in a side column */
 .md-content--post { display: block; }
@@ -73,7 +72,19 @@
 .md-typeset pre > code, .md-typeset .highlight { border-radius: 0; }
 .md-typeset pre > code { border: 1px solid var(--md-default-fg-color--lightest); }
 .md-header { box-shadow: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
-.md-header__button.md-logo img { height: 1.3rem; width: auto; }
+
+/* Header: the same as ethlo.com's, in px so it matches at every root size. Same frame (1200px with
+   the same gutter), 34px logo, 24px above and below, and the title set like ethlo.com's menu. */
+.md-header .md-header__inner.md-grid { max-width: 1200px; height: auto; padding: 24px clamp(16px, 4vw, 48px); box-sizing: border-box; }
+.md-header__button.md-logo { margin: 0; padding: 0; }
+.md-header__button.md-logo img, .md-header__button.md-logo svg { height: 34px; width: auto; display: block; }
+.md-header__title { margin-left: 28px; height: 40px; line-height: 40px; }
+.md-header__ellipsis { height: 40px; }
+.md-header__topic { font-family: "Inter Tight", system-ui, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: normal; line-height: 40px; }
+.md-header__source:not(:has(*)) { display: none; }
+
+/* The front page's title at the size of ethlo.com's section headlines */
+body:has(.kw-start) .md-typeset h1 { font-size: clamp(44px, 6vw, 80px); line-height: .96; letter-spacing: -.05em; }
 
 /* Previous/next only between posts. On the list, archive and category pages the theme would
    chain through years and categories instead of posts. */
