@@ -141,3 +141,6 @@ body:not(:has(.md-content--post)) .md-footer__inner { display: none; }
 }
 .kw-home:hover { color: var(--ethlo-accent); }
 .kw-home span { color: var(--ethlo-accent); }
+@media screen and (max-width: 40em) { .kw-home { display: none; } }
+/* The logo is light grey, made for the dark scheme; darken it on the light one */
+[data-md-color-scheme="default"] .md-header .md-logo img { filter: brightness(.2); }

@@ -39,7 +39,7 @@
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <a class="md-ellipsis kw-title" href="{{ nav.homepage.url | url }}">
+          <a class="md-ellipsis kw-title" href="{{ (nav.homepage.url | url) or './' }}">
             {{- config.site_name -}}
           </a>
         </div>
