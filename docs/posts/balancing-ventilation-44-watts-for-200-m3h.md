@@ -41,10 +41,6 @@ That is normal mode: 300 m³/h in and out, for a house of 141 m² and about 300 
 
 For each valve I wrote down the number of turns from closed. If someone turns one by accident, it can be set back without measuring again.
 
-![Insulated ducts meeting in the attic](../assets/ventilation/attic-ducts-insulated.jpg)
-
-*Where the ducts meet in the attic, insulated.*
-
 ## The modes
 
 <svg viewBox="0 0 680 192" role="img" aria-label="Supply air per mode, m³/h, with the power it takes" style="width:100%;max-width:680px;height:auto;font-family:inherit">
