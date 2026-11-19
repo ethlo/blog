@@ -6,6 +6,7 @@ categories:
   - Home Assistant
 share: assets/social/the-heat-exchanger-was-holding-back-on-purpose.png
 description: "The ventilation halved the radon. It also cost 640 watts, and one setting was the reason."
+image: assets/thumbs/the-heat-exchanger-was-holding-back-on-purpose.jpg
 ---
 
 # The heat exchanger was holding back, on purpose

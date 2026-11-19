@@ -5,6 +5,7 @@ categories:
   - Geo
 share: assets/social/a-map-tile-as-a-64-bit-integer.png
 description: "I want to know where users are, and I do not want to know where users are."
+image: assets/thumbs/a-map-tile-as-a-64-bit-integer.jpg
 ---
 
 # A map tile as a 64-bit integer

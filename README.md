@@ -35,6 +35,11 @@ show for a link) and, for posts with an image, a thumbnail for the list (`docs/a
 It also fills in `description`, `share` and `image` in the front matter. A `description` written by
 hand is kept; `thumb: assets/...` picks another image for the thumbnail than the post's first one.
 
+Posts whose only picture is an inline SVG chart or diagram, or a GIF, get their list thumbnail
+from `scripts/chart-thumbs.py` (needs Pillow, and Playwright with Chromium for the SVGs): it
+renders the first chart on the site's dark surface, or takes the GIF's first frame. Run it after
+`cards.py`; it skips posts that already have an `image`.
+
 The list templates are in `overrides/`: `partials/post.html` is one post in the list,
 `main.html` adds the link-preview tags. The three "Start here" posts are in `docs/index.md`.
 

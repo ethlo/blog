@@ -5,6 +5,7 @@ categories:
   - Databases
 share: assets/social/a-kafka-like-queue-on-mysql.png
 description: "Everybody knows you should not build a message queue on a database. I just did, and I think it was the right call."
+image: assets/thumbs/a-kafka-like-queue-on-mysql.jpg
 ---
 
 # A Kafka-like queue on MySQL

@@ -4,6 +4,7 @@ categories:
   - Homelab
 share: assets/social/661-backups-and-none-of-them-off-site.png
 description: "At work I would never accept a system without a tested, off-site backup. At home I ran one for years, and it held everything I actually care about."
+image: assets/thumbs/661-backups-and-none-of-them-off-site.jpg
 ---
 
 # 661 backups and none of them off-site
