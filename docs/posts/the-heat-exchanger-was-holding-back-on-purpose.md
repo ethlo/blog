@@ -4,7 +4,6 @@ slug: the-heat-exchanger-was-holding-back-on-purpose
 categories:
   - House
   - Home Assistant
-draft: true
 share: assets/social/the-heat-exchanger-was-holding-back-on-purpose.png
 description: "The ventilation halved the radon. It also cost 640 watts, and one setting was the reason."
 ---
@@ -15,7 +14,7 @@ The ventilation halved the radon. It also cost 640 watts, and one setting was th
 
 <!-- more -->
 
-The [last post about the ventilation](balancing-ventilation-44-watts-for-200-m3h.md) ended with the part I had not measured: the heat recovery. Winter will show, I wrote. It did, just not in the way I expected.
+The [last post about the ventilation](/balancing-ventilation-44-watts-for-200-m3h/) ended with the part I had not measured: the heat recovery. Winter will show, I wrote. It did, just not in the way I expected.
 
 ## Five years in one place
 
