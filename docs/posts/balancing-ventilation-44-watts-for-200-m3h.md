@@ -5,6 +5,7 @@ categories:
   - House
 share: assets/social/balancing-ventilation-44-watts-for-200-m3h.png
 image: assets/thumbs/balancing-ventilation-44-watts-for-200-m3h.jpg
+thumb: assets/ventilation/unit-in-attic-finished.jpg
 description: "The extra ducts paid off. Balancing the ventilation was simple."
 ---
 
@@ -39,10 +40,6 @@ With the normal design, air goes in in one room and out in another, so turning o
 That is normal mode: 300 m³/h in and out, for a house of 141 m² and about 300 m³. So the air is replaced once an hour, for 78 watts.
 
 For each valve I wrote down the number of turns from closed. If someone turns one by accident, it can be set back without measuring again.
-
-![Insulated ducts meeting in the attic](../assets/ventilation/attic-ducts-insulated.jpg)
-
-*Where the ducts meet in the attic, insulated.*
 
 ## The modes
 
