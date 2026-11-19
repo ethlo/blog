@@ -37,6 +37,10 @@ That doubles the ducting. In an existing house it also means ducts that have to 
 
 And I had a second demand that pulled the other way. Nothing was to be visible. No lowered ceilings and no boxes along the walls. So I wanted twice the ducts and none of them in sight, in a house that was finished 25 years ago.
 
+![An insulated duct in the narrow space above the living room ceiling](../assets/ventilation/duct-above-living-room.jpg)
+
+*Above the living room. These are the times you love being 193 cm tall and 100 kg, balancing on your knees above the plaster ceiling below.*
+
 ![Two insulated ducts in an opened wall](../assets/ventilation/wall-chase.jpg)
 
 *Two insulated ducts going down through an opened wall. The wall was closed again afterwards.*
