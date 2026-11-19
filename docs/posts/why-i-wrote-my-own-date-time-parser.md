@@ -5,6 +5,7 @@ categories:
   - Performance
 share: assets/social/why-i-wrote-my-own-date-time-parser.png
 description: "1488153600. Is that seconds or milliseconds? You find out when the date lands in 1970 or in the year 49,000. APIs send timestamps like that since a number is fast to parse. I wanted to see how…"
+image: assets/thumbs/why-i-wrote-my-own-date-time-parser.jpg
 ---
 
 # Why I wrote my own date-time parser

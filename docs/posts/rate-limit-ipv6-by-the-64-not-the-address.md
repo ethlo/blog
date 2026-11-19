@@ -5,6 +5,7 @@ categories:
   - Security
 share: assets/social/rate-limit-ipv6-by-the-64-not-the-address.png
 description: "My gateway had a rate limiter that did nothing for IPv6 clients. I wrote it, and I should have known better."
+image: assets/thumbs/rate-limit-ipv6-by-the-64-not-the-address.jpg
 ---
 
 # Rate limit IPv6 by the /64, not the address

@@ -5,6 +5,7 @@ categories:
   - Spring
 share: assets/social/springs-transaction-aware-cache-has-a-massive-flaw.png
 description: "Spring has a decorator that keeps your cache honest when a transaction rolls back. It does that by lying to you until the transaction is over."
+image: assets/thumbs/springs-transaction-aware-cache-has-a-massive-flaw.jpg
 ---
 
 # Spring's transaction-aware cache has a massive flaw

@@ -4,6 +4,7 @@ categories:
   - Geo
 share: assets/social/where-nobody-has-looked-yet.png
 description: "I do not like software that tracks where people are. I have started on an app that does exactly that."
+image: assets/thumbs/where-nobody-has-looked-yet.jpg
 ---
 
 # Where nobody has looked yet

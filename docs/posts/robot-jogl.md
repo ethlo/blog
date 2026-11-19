@@ -4,6 +4,7 @@ categories:
   - Archive
 share: assets/social/robot-jogl.png
 description: "After a few days of writing code directly for drawing surfaces and cylinders, it turned out to be very hard work to get a good-looking robot. That gave me the idea of loading a model made in a 3D…"
+image: assets/thumbs/robot-jogl.jpg
 ---
 
 # Robot
