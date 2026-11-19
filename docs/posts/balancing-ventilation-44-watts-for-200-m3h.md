@@ -5,6 +5,7 @@ categories:
   - House
 share: assets/social/balancing-ventilation-44-watts-for-200-m3h.png
 image: assets/thumbs/balancing-ventilation-44-watts-for-200-m3h.jpg
+thumb: assets/ventilation/unit-in-attic-finished.jpg
 description: "The extra ducts paid off. Balancing the ventilation was simple."
 ---
 
